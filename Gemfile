@@ -1,12 +1,22 @@
 source 'https://rubygems.org'
 
-gem 'rails', path: "/Users/eileen/Sites/open_source/rails"
+gem 'rails', '>= 5.0.0.alpha', github: 'rails/rails'
 gem 'arel', github: 'rails/arel'
+#gem 'sprockets', github: 'rails/sprockets', ref: '2baf38c08e2de74e9b8843690f01f57093dafa66'
+#gem 'sprockets-rails', github: 'rails/sprockets-rails', branch: '2.x'
+gem 'sprockets', github: 'rails/sprockets', branch: 'master'
+gem 'sprockets-rails', github: 'eileencodes/sprockets-rails', branch: 'fix-perf-regression-in-rails-helper'
+
+# benchmarking
+gem 'benchmark-ips'
+gem 'stackprof'
+gem 'allocation_tracer'
+gem 'ruby-prof'
 
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 5.0'
+gem 'sass-rails', github: 'rails/sass-rails', branch: 'master'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
