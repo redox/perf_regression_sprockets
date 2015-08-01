@@ -1,22 +1,19 @@
 source 'https://rubygems.org'
 
-gem 'rails', '>= 5.0.0.alpha', github: 'rails/rails'
-gem 'arel', github: 'rails/arel'
-#gem 'sprockets', github: 'rails/sprockets', ref: '2baf38c08e2de74e9b8843690f01f57093dafa66'
-#gem 'sprockets-rails', github: 'rails/sprockets-rails', branch: '2.x'
-gem 'sprockets', github: 'rails/sprockets', branch: 'master'
-gem 'sprockets-rails', github: 'eileencodes/sprockets-rails', branch: 'fix-perf-regression-in-rails-helper'
+gem 'rails'
+gem 'arel'
+gem 'sprockets'
 
-# benchmarking
-gem 'benchmark-ips'
-gem 'stackprof'
-gem 'allocation_tracer'
-gem 'ruby-prof'
+# gem 'sprockets-rails', '2.1.3'
+# gem 'sprockets-rails', '2.1.4'
+# gem 'sprockets-rails', '2.2.3'
+# gem 'sprockets-rails', '2.3.2'
+gem 'sprockets-rails', github: 'rails/sprockets-rails', ref: 'ad4a43bd1bb19c86a8bf94a2ad5e477686161490'
 
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use SCSS for stylesheets
-gem 'sass-rails', github: 'rails/sass-rails', branch: 'master'
+gem 'sass-rails'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
@@ -32,24 +29,3 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
-
-# Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
-
-# Use Unicorn as the app server
-# gem 'unicorn'
-
-# Use Capistrano for deployment
-# gem 'capistrano-rails', group: :development
-
-group :development, :test do
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug'
-
-  # Access an IRB console on exception pages or by using <%= console %> in views
-  gem 'web-console', '~> 2.0'
-
-  # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-  gem 'spring'
-end
-
