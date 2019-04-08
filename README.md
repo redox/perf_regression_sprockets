@@ -6,6 +6,13 @@ The particularity of that project is that the `application.css.sass` requiresr *
 
 Tested using `ab -c 1 -n 100 http://localhost:3000/posts/1`:
 
+---
+### Update - April 2019
+
+This still doesn't seem to be resolved. See my recent tests: https://gist.github.com/julienbourdeau/e467654099e84b91580744dfc3f6a01f
+
+---
+
 #### sprockets-rails 2.1.3
 
 Median Processing Time: **20ms**
